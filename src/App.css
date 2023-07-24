@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Navbar styles */
+.navbar {
+  text-align: center;
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff !important;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Home section styles */
+#home {
+  background-color: #343a40;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
+}
+
+/* About section styles */
+#about {
+  padding: 80px 0;
+  margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
+}
+
+#about h2 {
+  text-align: center;
+}
+
+/* Projects section styles */
+#projects {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section styles */
+#contact {
+  padding: 80px 0;
+  background-color: #343a40;
+  color: #fff;
+  margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-linkedin {
+  font-size: .8rem;
+}
+#contact-git {
+  font-size: .8rem;
+}
+
+
+.contact-icons a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 30px; 
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #ffc107; /* Change the color on hover (you can choose your own color) */
+}
+
+/* App.css */
+
+/* Navbar styles */
+.navbar {
+  text-decoration: none;
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Change the color on hover (you can choose your own color) */
+}
+
+.project-card img{
+  width: 20rem;
+}
+
+.project-card a{
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer{
+  text-align: center;
+}
