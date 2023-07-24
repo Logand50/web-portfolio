@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Navbar styles */
 .navbar {
   text-align: center;
   background-color: #343a40;
@@ -23,7 +21,7 @@
   cursor: pointer;
 }
 
-/* Home section styles */
+
 #home {
   background-color: #343a40;
   color: #fff;
@@ -32,7 +30,6 @@
   margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
 }
 
-/* About section styles */
 #about {
   padding: 80px 0;
   margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
@@ -42,7 +39,7 @@
   text-align: center;
 }
 
-/* Projects section styles */
+
 #projects {
   text-align: center;
   background-color: #f8f9fa;
@@ -58,15 +55,15 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact section styles */
+
 #contact {
   padding: 80px 0;
   background-color: #343a40;
   color: #fff;
-  margin-top: 56px; /* Adjust margin-top to account for the fixed navbar height */
+  margin-top: 56px; 
 }
 
-/* Footer styles */
+
 footer {
   background-color: #343a40;
   color: #fff;
@@ -97,7 +94,7 @@ footer {
 }
 
 .contact-icons a:hover {
-  color: #ffc107; /* Change the color on hover (you can choose your own color) */
+  color: #ffc107; 
 }
 
 /* App.css */
@@ -121,7 +118,7 @@ footer {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc107; /* Change the color on hover (you can choose your own color) */
+  color: #ffc107; 
 }
 
 .project-card img{
