@@ -60,8 +60,8 @@ const SampleNextArrow = (props) => {
 
 
 
-const ProjectCard = ({ project }) => (
-  <div className="project-card">
+const ProjectCard = ({ project, isFirst }) => (
+  <div className={`project-card ${isFirst ? 'first-project' : ''}`}>
     <div className="project-content">
       <h3>{project.title}</h3>
       <p>{project.description}</p>
@@ -76,14 +76,21 @@ const ProjectCard = ({ project }) => (
 const Projects = () => {
   const projects = [
     {
-      id: 1,
+        id: 1,
+        title: "Java Calculator",
+        description: "Basic calculator programmed using Java. This program implemented use of the Swing Library.",
+        githubLink: "https://github.com/Logand50/java-calculator",
+        imageSrc: "/CalculatorJava.png",
+    },
+    {
+      id: 2,
       title: "Tic-Tac-Toe Game",
       description: "Tic Tac Toe Game programmed in Python, using the Pygame library. The program implements a simple computer AI for the single-player mode.",
       githubLink: "https://github.com/Logand50/TicTacToe",
       imageSrc: "/1687734404199.jpg",
     },
     {
-      id: 2,
+      id: 3,
       title: "Snake Game",
       description: "Snake Game programmed in Python. This code presents an engaging rendition of the classic Snake game using the Pygame library.",
       githubLink: "https://github.com/Logand50/snake_pygame",
@@ -107,9 +114,9 @@ const Projects = () => {
     <section id="projects">
       <h2>Projects</h2>
       <Slider {...settings}>
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div key={project.id}>
-            <ProjectCard project={project} />
+            <ProjectCard project={project} isFirst={index===0}/>
           </div>
         ))}
       </Slider>
